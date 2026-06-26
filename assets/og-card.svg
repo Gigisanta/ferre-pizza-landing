@@ -1,10 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ferre Pizza">
-  <rect width="1200" height="630" fill="#111418"/>
-  <circle cx="880" cy="300" r="210" fill="#c77a32"/>
-  <circle cx="880" cy="300" r="175" fill="#f6c85f"/>
-  <circle cx="810" cy="240" r="34" fill="#df3f2f"/><circle cx="940" cy="280" r="34" fill="#df3f2f"/><circle cx="865" cy="390" r="34" fill="#df3f2f"/>
-  <path d="M880 300 L880 92 A208 208 0 0 1 1088 300 Z" fill="#f8efe2" opacity=".18"/>
-  <text x="86" y="190" fill="#68bde8" font-family="Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="5">PIZZA DE BARRIO · MODO SELECCIÓN</text>
-  <text x="82" y="315" fill="#f8efe2" font-family="Arial, sans-serif" font-size="92" font-weight="900">Ferre Pizza</text>
-  <text x="88" y="390" fill="#b9b0a4" font-family="Arial, sans-serif" font-size="34">Masa casera, promos de partido y pedidos por WhatsApp.</text>
+  <rect width="1200" height="630" fill="#f8f1e7"/>
+  <path d="M0 470 C180 390 310 540 520 455 S850 340 1200 430 V630 H0Z" fill="#fffaf2"/>
+  <circle cx="900" cy="305" r="175" fill="#9a4b1f"/>
+  <circle cx="900" cy="305" r="146" fill="#f4c766"/>
+  <path d="M900 305 L900 159 A146 146 0 0 1 1028 235Z" fill="#fff0bd" opacity=".55"/>
+  <g fill="#b7352b"><circle cx="842" cy="255" r="23"/><circle cx="954" cy="247" r="25"/><circle cx="982" cy="343" r="24"/><circle cx="875" cy="388" r="22"/></g>
+  <g fill="#2d6d4f"><ellipse cx="897" cy="267" rx="27" ry="12" transform="rotate(-28 897 267)"/><ellipse cx="945" cy="379" rx="25" ry="11" transform="rotate(24 945 379)"/></g>
+  <text x="86" y="154" fill="#b7352b" font-family="Arial, sans-serif" font-size="27" font-weight="900" letter-spacing="5">PIZZA DE BARRIO · PROMOS DE PARTIDO</text>
+  <text x="82" y="290" fill="#191512" font-family="Georgia, serif" font-size="92" font-weight="900">Ferre Pizza</text>
+  <text x="86" y="360" fill="#6e6257" font-family="Arial, sans-serif" font-size="33">Masa casera, muzza generosa y pedidos por WhatsApp.</text>
+  <rect x="86" y="420" width="250" height="58" rx="29" fill="#191512"/>
+  <text x="211" y="458" fill="#fffaf2" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="900">Armar pedido</text>
 </svg>

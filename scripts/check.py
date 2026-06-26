@@ -10,17 +10,12 @@ js = (root / 'script.js').read_text(encoding='utf-8')
 class Parser(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.ids = set()
-        self.links = []
-        self.imgs = []
-        self.buttons = 0
-        self.h1 = 0
+        self.ids = set(); self.links = []; self.imgs = []; self.h1 = 0
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
         if 'id' in d: self.ids.add(d['id'])
         if tag == 'a' and 'href' in d: self.links.append(d['href'])
         if tag == 'img': self.imgs.append(d)
-        if tag == 'button': self.buttons += 1
         if tag == 'h1': self.h1 += 1
 
 p = Parser(); p.feed(html)
@@ -32,11 +27,10 @@ for href in p.links:
 for img in p.imgs:
     if not img.get('alt'):
         errors.append('image without alt')
-for required in ['prefers-reduced-motion', '@media (max-width: 860px)', '.skip-link', 'IntersectionObserver']:
-    blob = css + js + html
-    if required not in blob:
+for required in ['prefers-reduced-motion', '@media (max-width: 880px)', '.skip-link', 'IntersectionObserver']:
+    if required not in (css + js + html):
         errors.append(f'missing {required}')
-for path in ['assets/promo-mundiales.jpg', 'assets/promo-mundiales.webp', 'assets/og-card.svg', 'assets/favicon.svg']:
+for path in ['assets/hero-pizza.svg','assets/promo-mundiales.jpg', 'assets/promo-mundiales.webp', 'assets/og-card.svg', 'assets/favicon.svg']:
     if not (root / path).exists():
         errors.append(f'missing asset {path}')
 if re.search(r'https?://(fonts|cdn)\.', html + css + js):
