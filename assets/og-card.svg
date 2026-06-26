@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ferre Pizza">
+  <rect width="1200" height="630" fill="#111418"/>
+  <circle cx="880" cy="300" r="210" fill="#c77a32"/>
+  <circle cx="880" cy="300" r="175" fill="#f6c85f"/>
+  <circle cx="810" cy="240" r="34" fill="#df3f2f"/><circle cx="940" cy="280" r="34" fill="#df3f2f"/><circle cx="865" cy="390" r="34" fill="#df3f2f"/>
+  <path d="M880 300 L880 92 A208 208 0 0 1 1088 300 Z" fill="#f8efe2" opacity=".18"/>
+  <text x="86" y="190" fill="#68bde8" font-family="Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="5">PIZZA DE BARRIO · MODO SELECCIÓN</text>
+  <text x="82" y="315" fill="#f8efe2" font-family="Arial, sans-serif" font-size="92" font-weight="900">Ferre Pizza</text>
+  <text x="88" y="390" fill="#b9b0a4" font-family="Arial, sans-serif" font-size="34">Masa casera, promos de partido y pedidos por WhatsApp.</text>
+</svg>
