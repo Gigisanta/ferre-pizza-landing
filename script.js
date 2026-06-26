@@ -14,7 +14,7 @@ function buildMessage() {
   const qtyRaw = fields.qty.value.trim();
   const qty = Math.max(1, Number.parseInt(qtyRaw, 10) || 1);
   const note = fields.note.value.trim();
-  const who = name ? `soy ${name}. ` : '';
+  const who = name ? `soy ${name} y ` : '';
   const extra = note ? ` Nota: ${note}.` : '';
   return `Hola Ferre, ${who}quiero pedir ${qty} pizza${qty === 1 ? '' : 's'} ${flavor}.${extra}`;
 }
