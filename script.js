@@ -45,6 +45,15 @@ fields.copyBtn.addEventListener('click', async () => {
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+document.querySelectorAll('.menu-order').forEach((button) => {
+  button.addEventListener('click', () => {
+    fields.flavor.value = button.dataset.flavor || fields.flavor.value;
+    syncMessage();
+    document.querySelector('#pedido').scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    fields.qty.focus({ preventScroll: true });
+  });
+});
+
 const observer = !prefersReducedMotion && 'IntersectionObserver' in window
   ? new IntersectionObserver((entries) => {
       for (const entry of entries) {
