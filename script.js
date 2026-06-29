@@ -25,22 +25,27 @@ function syncMessage() {
   fields.waBtn.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
 }
 
-['input', 'change'].forEach(evt => {
-  document.querySelector('.order-form').addEventListener(evt, syncMessage);
+const orderForm = document.querySelector('.order-form');
+['input', 'change'].forEach((eventName) => {
+  orderForm.addEventListener(eventName, syncMessage);
 });
 
 fields.copyBtn.addEventListener('click', async () => {
   const message = buildMessage();
   try {
     await navigator.clipboard.writeText(message);
-    fields.copyBtn.textContent = 'Copiado';
+    fields.copyBtn.textContent = 'Mensaje copiado';
   } catch {
-    fields.copyBtn.textContent = 'Seleccioná el mensaje';
+    fields.copyBtn.textContent = 'Copialo del recuadro';
   }
-  setTimeout(() => fields.copyBtn.textContent = 'Copiar mensaje', 1600);
+  setTimeout(() => {
+    fields.copyBtn.textContent = 'Copiar mensaje';
+  }, 1600);
 });
 
-const observer = 'IntersectionObserver' in window
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const observer = !prefersReducedMotion && 'IntersectionObserver' in window
   ? new IntersectionObserver((entries) => {
       for (const entry of entries) {
         if (entry.isIntersecting) {
@@ -48,7 +53,7 @@ const observer = 'IntersectionObserver' in window
           observer.unobserve(entry.target);
         }
       }
-    }, { threshold: 0.14 })
+    }, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' })
   : null;
 
 document.querySelectorAll('.reveal').forEach((el) => {

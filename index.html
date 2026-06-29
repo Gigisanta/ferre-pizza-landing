@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ferre Pizza — pizzas caseras para juntadas y partidos</title>
-  <meta name="description" content="Ferre Pizza: pizzas caseras, combos para juntadas, promociones cuando juega la Selección y pedido rápido por WhatsApp.">
+  <title>Ferre Pizza — pizza de barrio para juntadas, partidos y noches largas</title>
+  <meta name="description" content="Ferre Pizza: landing premium para pedir pizzas caseras por WhatsApp, ver promos de partido, menú destacado y armar el mensaje de pedido en segundos.">
   <meta name="theme-color" content="#f8f1e7">
   <meta property="og:title" content="Ferre Pizza — pizza de barrio, hecha para compartir">
-  <meta property="og:description" content="Masa casera, muzza abundante y promos para noches de partido.">
+  <meta property="og:description" content="Masa casera, muzza generosa, promos para partidos y pedido directo por WhatsApp.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/assets/og-card.svg">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css?v=visual-2">
+  <link rel="stylesheet" href="/styles.css?v=visual-3">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -19,9 +19,9 @@
     "name": "Ferre Pizza",
     "servesCuisine": "Pizza",
     "priceRange": "$$",
-    "description": "Pizzas caseras y promociones para noches de partido.",
+    "description": "Pizzas caseras, promos para juntadas y pedido directo por WhatsApp.",
     "areaServed": "Argentina",
-    "acceptsReservations": "False"
+    "acceptsReservations": false
   }
   </script>
 </head>
@@ -32,11 +32,12 @@
     <nav class="nav shell" aria-label="Navegación principal">
       <a class="brand" href="#top" aria-label="Ferre Pizza inicio">
         <span class="brand-mark" aria-hidden="true">F</span>
-        <span>Ferre Pizza</span>
+        <span class="brand-text">Ferre Pizza</span>
       </a>
       <div class="nav-links" aria-label="Secciones">
         <a href="#menu">Menú</a>
         <a href="#promos">Promos</a>
+        <a href="#confianza">Confianza</a>
         <a href="#pedido">Pedido</a>
       </div>
       <a class="nav-cta" href="#pedido">Pedir por WhatsApp</a>
@@ -46,88 +47,111 @@
   <main id="contenido">
     <section id="top" class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Pizza de barrio · promos de partido</p>
-        <h1 id="hero-title">La pizza para mirar el partido sin discutir qué comer.</h1>
-        <p class="hero-lede">Ferre Pizza vende lo que una juntada necesita: masa casera, muzza generosa, borde dorado y combos simples para pedir por WhatsApp.</p>
+        <p class="eyebrow">Pizza de barrio · pedido directo · promo de partido</p>
+        <h1 id="hero-title">La pizza que llega cuando la mesa ya está armada.</h1>
+        <p class="hero-lede">Ferre Pizza combina masa casera, muzzarella abundante y una compra sin fricción: elegís, armás el mensaje y cerrás por WhatsApp.</p>
         <div class="hero-actions" aria-label="Acciones principales">
           <a class="btn btn-primary" href="#pedido">Armar pedido</a>
-          <a class="btn btn-secondary" href="#menu">Ver menú</a>
+          <a class="btn btn-secondary" href="#menu">Ver sabores</a>
         </div>
-        <ul class="trust-list" aria-label="Diferenciales">
-          <li><strong>Casera</strong><span>masa de barrio</span></li>
-          <li><strong>Simple</strong><span>pedido directo</span></li>
-          <li><strong>Compartible</strong><span>combos para mesa llena</span></li>
-        </ul>
+        <div class="proof-ribbon" aria-label="Resumen de valor">
+          <span><strong>3 pasos</strong> para pedir</span>
+          <span><strong>0 apps</strong> ni registros</span>
+          <span><strong>1 mensaje</strong> listo</span>
+        </div>
       </div>
 
-      <aside class="hero-card reveal" aria-label="Producto destacado">
-        <div class="hero-card-top">
-          <span>Hoy juega Argentina</span>
-          <strong>Promo activa</strong>
+      <aside class="hero-stage reveal" aria-label="Producto destacado Ferre Pizza">
+        <div class="stage-halo" aria-hidden="true"></div>
+        <div class="oven-badge">
+          <span>Hoy sale</span>
+          <strong>Combo noche</strong>
         </div>
         <img class="hero-pizza" src="/assets/hero-pizza.svg" width="560" height="420" alt="Ilustración de pizza Ferre servida para compartir">
-        <div class="price-ticket">
-          <span>combo noche</span>
-          <strong>2 pizzas + bebida</strong>
-          <small>consultá precio del día</small>
+        <div class="ticket-card">
+          <div>
+            <span>pedido sugerido</span>
+            <strong>2 pizzas + bebida</strong>
+          </div>
+          <small>precio y zona se actualizan cuando Ferre pase los datos reales</small>
         </div>
       </aside>
     </section>
 
     <section class="marquee" aria-label="Valores de marca">
-      <div class="marquee-inner shell">
+      <div class="marquee-track">
         <span>horno fuerte</span>
         <span>muzzarella generosa</span>
         <span>pedido por WhatsApp</span>
         <span>promo mundial</span>
+        <span>masa casera</span>
+        <span>para compartir</span>
+        <span aria-hidden="true">horno fuerte</span>
+        <span aria-hidden="true">muzzarella generosa</span>
+        <span aria-hidden="true">pedido por WhatsApp</span>
+        <span aria-hidden="true">promo mundial</span>
       </div>
     </section>
 
-    <section id="menu" class="section shell" aria-labelledby="menu-title">
+    <section id="menu" class="section menu-section shell" aria-labelledby="menu-title">
       <div class="section-heading reveal">
-        <p class="eyebrow">Menú corto</p>
-        <h2 id="menu-title">Tres opciones, ninguna falla.</h2>
+        <p class="eyebrow">Menú curado</p>
+        <h2 id="menu-title">Pocas opciones, bien presentadas, fáciles de vender.</h2>
+        <p>Hasta tener el menú final, la página muestra una carta compacta pensada para convertir: clásica, favorita de grupo y combo fuerte.</p>
       </div>
       <div class="menu-grid">
         <article class="menu-card reveal">
           <span class="menu-number">01</span>
           <h3>Muzza Ferre</h3>
-          <p>Salsa con carácter, queso parejo y borde crocante. La clásica que sostiene la mesa.</p>
-          <span class="menu-tag">la segura</span>
+          <p>Salsa con carácter, queso parejo y borde dorado. La clásica que sostiene cualquier mesa.</p>
+          <div class="menu-meta"><span>La segura</span><strong>consultar</strong></div>
         </article>
         <article class="menu-card reveal featured">
           <span class="menu-number">02</span>
           <h3>Napolitana de cancha</h3>
-          <p>Tomate, ajo justo y frescura. Para partido, previa o cena improvisada.</p>
-          <span class="menu-tag">favorita de grupo</span>
+          <p>Tomate, ajo justo y frescura. Pensada para partido, previa o cena improvisada.</p>
+          <div class="menu-meta"><span>Favorita de grupo</span><strong>promo</strong></div>
         </article>
         <article class="menu-card reveal">
           <span class="menu-number">03</span>
           <h3>Especial noche larga</h3>
           <p>Más carga, más queso y más excusa para pedir otra cuando el plan se estira.</p>
-          <span class="menu-tag">combo fuerte</span>
+          <div class="menu-meta"><span>Combo fuerte</span><strong>consultar</strong></div>
         </article>
       </div>
     </section>
 
     <section id="promos" class="section promo-section shell" aria-labelledby="promo-title">
       <div class="promo-copy reveal">
-        <p class="eyebrow">Del estado a una landing</p>
-        <h2 id="promo-title">La promo de WhatsApp, pero presentada como marca.</h2>
-        <p>Tomé la energía del flyer original —Ferre, Mundiales, Selección y precio destacado— y la pasé a una página más limpia: menos ruido, más apetito, mejor pedido.</p>
+        <p class="eyebrow">De flyer a sistema</p>
+        <h2 id="promo-title">La promo de WhatsApp convertida en una experiencia de marca.</h2>
+        <p>La landing rescata la energía popular del flyer original —Selección, Mundial y precio destacado— pero la ordena con jerarquía visual, aire y CTA claro.</p>
         <div class="promo-points">
-          <div><strong>01</strong><span>Mensaje claro para compartir.</span></div>
-          <div><strong>02</strong><span>Promos separadas del menú.</span></div>
-          <div><strong>03</strong><span>CTA directo al pedido.</span></div>
+          <div><strong>01</strong><span>Oferta visible sin ruido de volante.</span></div>
+          <div><strong>02</strong><span>Pedido directo desde cualquier sección.</span></div>
+          <div><strong>03</strong><span>Lista para reemplazar precio, zona y WhatsApp real.</span></div>
         </div>
       </div>
-      <aside class="story-frame reveal">
+      <aside class="story-frame reveal" aria-label="Flyer original como referencia de marca">
         <picture>
           <source srcset="/assets/promo-mundiales.webp" type="image/webp">
           <img src="/assets/promo-mundiales.jpg" alt="Flyer original de Ferre Pizza con promoción por partidos de la Selección" loading="lazy" width="590" height="1280">
         </picture>
-        <p>Referencia original: promo de partido.</p>
+        <p>Referencia original: promo de partido. La página la usa como textura, no como límite.</p>
       </aside>
+    </section>
+
+    <section id="confianza" class="section trust-section shell" aria-labelledby="trust-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Lo que debe transmitir</p>
+        <h2 id="trust-title">Apetito, cercanía y cero vueltas.</h2>
+      </div>
+      <div class="trust-grid">
+        <article class="trust-card reveal"><span>🍕</span><h3>Producto primero</h3><p>Fotos reales o ilustración cuidada, ingredientes claros y una carta que no obliga a preguntar todo.</p></article>
+        <article class="trust-card reveal"><span>📍</span><h3>Localidad clara</h3><p>Zona de entrega, horarios y costo de envío deben quedar arriba del fold cuando Ferre los confirme.</p></article>
+        <article class="trust-card reveal"><span>💬</span><h3>WhatsApp fuerte</h3><p>El CTA acompaña la página y el mensaje sale armado para reducir fricción.</p></article>
+        <article class="trust-card reveal"><span>⭐</span><h3>Prueba social</h3><p>Cuando lleguen reseñas reales, entran como comentarios cortos de clientes, no como frases inventadas.</p></article>
+      </div>
     </section>
 
     <section class="section steps-section shell" aria-labelledby="steps-title">
@@ -137,8 +161,8 @@
       </div>
       <div class="steps">
         <article class="step reveal"><span>1</span><h3>Elegís sabor</h3><p>Clásica, napo, especial o promo Selección.</p></article>
-        <article class="step reveal"><span>2</span><h3>Armás mensaje</h3><p>El generador deja el texto listo para copiar.</p></article>
-        <article class="step reveal"><span>3</span><h3>Coordinás entrega</h3><p>Horario, dirección y forma de pago por WhatsApp.</p></article>
+        <article class="step reveal"><span>2</span><h3>Armás mensaje</h3><p>El generador deja el texto listo para copiar o abrir en WhatsApp.</p></article>
+        <article class="step reveal"><span>3</span><h3>Coordinás entrega</h3><p>Horario, dirección y forma de pago se cierran directo con Ferre.</p></article>
       </div>
     </section>
 
@@ -146,8 +170,13 @@
       <div class="order-card reveal">
         <div class="order-copy">
           <p class="eyebrow">Pedido rápido</p>
-          <h2 id="order-title">Un mensaje listo para vender.</h2>
-          <p>Cuando tengas el número real del local, se reemplaza el link y queda funcionando directo al WhatsApp de Ferre.</p>
+          <h2 id="order-title">Un mensaje listo para mandar.</h2>
+          <p>Cuando tengamos el WhatsApp real, el botón abre directo el chat de Ferre con el pedido armado.</p>
+          <ul class="order-notes">
+            <li>Nombre y cantidad</li>
+            <li>Sabor o promo</li>
+            <li>Dirección, horario y pago</li>
+          </ul>
         </div>
         <form class="order-form" aria-label="Generador de mensaje de pedido">
           <label>Nombre
@@ -181,11 +210,13 @@
     </section>
   </main>
 
+  <a class="sticky-order" href="#pedido" aria-label="Ir al generador de pedido">Pedir ahora</a>
+
   <footer class="footer shell">
     <p><strong>Ferre Pizza</strong> · Landing estática, rápida y lista para vender.</p>
     <a href="#top">Volver arriba</a>
   </footer>
 
-  <script src="/script.js?v=visual-2" defer></script>
+  <script src="/script.js?v=visual-3" defer></script>
 </body>
 </html>
